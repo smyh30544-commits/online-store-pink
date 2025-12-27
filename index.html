@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه آنلاین | طرح صورتی</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css">
+</head>
+<body>
+    <!-- هدر سایت -->
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="logo">
+                        <i class="fas fa-shopping-bag"></i>
+                        فروشگاه آنلاین
+                    </div>
+                    
+                    <!-- منوی سه خطی -->
+                    <div class="hamburger-menu" id="hamburgerMenu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    
+                    <!-- بخش جستجو -->
+                    <div class="search-box">
+                        <input type="text" placeholder="جستجوی محصولات...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <!-- آیکون‌های هدر -->
+                    <div class="header-icons">
+                        <div class="icon-item" id="favoritesBtn">
+                            <i class="far fa-heart"></i>
+                            <span class="badge" id="favoritesCount">0</span>
+                        </div>
+                        <div class="icon-item" id="cartBtn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge" id="cartCount">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- نوار پیمایش -->
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-list">
+                    <li><a href="#"><i class="fas fa-home"></i> صفحه اصلی</a></li>
+                    <li class="has-dropdown">
+                        <a href="#"><i class="fas fa-th-large"></i> دسته‌بندی‌ها</a>
+                        <ul class="dropdown">
+                            <li><a href="#">الکترونیک</a></li>
+                            <li><a href="#">پوشاک</a></li>
+                            <li><a href="#">خانه و آشپزخانه</a></li>
+                            <li><a href="#">کالای دیجیتال</a></li>
+                            <li><a href="#">لوازم آرایشی</a></li>
+                            <li><a href="#">کتاب و لوازم تحریر</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fas fa-percentage"></i> تخفیف‌های ویژه</a></li>
+                    <li><a href="#"><i class="fas fa-headset"></i> پشتیبانی</a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> درباره ما</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- منوی کشویی سمت چپ -->
+    <div class="side-menu" id="sideMenu">
+        <div class="side-menu-header">
+            <h3><i class="fas fa-user-circle"></i> حساب کاربری</h3>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="side-menu-list">
+            <li><a href="#"><i class="fas fa-user-plus"></i> ثبت‌نام</a></li>
+            <li><a href="#"><i class="fas fa-sign-in-alt"></i> ورود</a></li>
+            <li><a href="#" id="trackOrderBtn"><i class="fas fa-shipping-fast"></i> پیگیری سفارشات</a></li>
+            <li><a href="#"><i class="fas fa-phone-alt"></i> ارتباط با ما</a></li>
+            <li><a href="#"><i class="fas fa-question-circle"></i> راهنما</a></li>
+            <li><a href="#"><i class="fas fa-history"></i> تاریخچه خرید</a></li>
+        </ul>
+        
+        <!-- دایره پشتیبانی -->
+        <div class="support-circle">
+            <div class="support-icon">
+                <i class="fas fa-headset"></i>
+            </div>
+            <p>پشتیبانی آنلاین</p>
+            <small>۲۴ ساعته، ۷ روز هفته</small>
+        </div>
+    </div>
+    
+    <!-- محتوای اصلی -->
+    <main class="container">
+        <!-- بنر تبلیغاتی -->
+        <section class="banner">
+            <div class="banner-content">
+                <h1>به فروشگاه آنلاین ما خوش آمدید</h1>
+                <p>خرید آسان و مطمئن با بهترین قیمت‌ها</p>
+                <button class="btn-primary">شروع خرید</button>
+            </div>
+        </section>
+        
+        <!-- محصولات شگفت‌انگیز (کشویی) -->
+        <section class="amazing-products">
+            <div class="section-header">
+                <h2><i class="fas fa-bolt"></i> محصولات شگفت‌انگیز</h2>
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn"><i class="fas fa-chevron-right"></i></button>
+                    <button class="slider-btn next-btn"><i class="fas fa-chevron-left"></i></button>
+                </div>
+            </div>
+            
+            <div class="products-slider">
+                <div class="slider-track" id="amazingSlider">
+                    <!-- محصولات با JavaScript اضافه می‌شوند -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- محصولات جدید -->
+        <section class="new-products">
+            <div class="section-header">
+                <h2><i class="fas fa-certificate"></i> محصولات جدید</h2>
+            </div>
+            
+            <div class="products-grid" id="newProducts">
+                <!-- محصولات با JavaScript اضافه می‌شوند -->
+            </div>
+        </section>
+        
+        <!-- سبد خرید -->
+        <div class="cart-modal" id="cartModal">
+            <div class="cart-header">
+                <h3><i class="fas fa-shopping-cart"></i> سبد خرید شما</h3>
+                <button class="close-cart" id="closeCart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- آیتم‌های سبد خرید با JavaScript اضافه می‌شوند -->
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-basket"></i>
+                    <p>سبد خرید شما خالی است</p>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>جمع کل:</span>
+                    <span id="cartTotal">۰ تومان</span>
+                </div>
+                <button class="btn-checkout">تکمیل سفارش</button>
+            </div>
+        </div>
+        
+        <!-- لیست علاقه‌مندی‌ها -->
+        <div class="favorites-modal" id="favoritesModal">
+            <div class="favorites-header">
+                <h3><i class="fas fa-heart"></i> محصولات مورد علاقه</h3>
+                <button class="close-favorites" id="closeFavorites">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="favorites-items" id="favoritesItems">
+                <!-- آیتم‌های مورد علاقه با JavaScript اضافه می‌شوند -->
+                <div class="empty-favorites">
+                    <i class="far fa-heart"></i>
+                    <p>هنوز محصولی به علاقه‌مندی‌ها اضافه نکرده‌اید</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- پنل پشتیبانی -->
+        <div class="support-modal" id="supportModal">
+            <div class="support-header">
+                <h3><i class="fas fa-headset"></i> پشتیبانی آنلاین</h3>
+                <button class="close-support" id="closeSupport">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="support-content">
+                <p>برای پیگیری سفارش خود، لطفاً شماره سفارش را وارد کنید:</p>
+                <div class="track-order-form">
+                    <input type="text" id="orderNumber" placeholder="شماره سفارش خود را وارد کنید">
+                    <button id="trackBtn">پیگیری سفارش</button>
+                </div>
+                <div class="support-response" id="supportResponse">
+                    <!-- پاسخ پشتیبانی نمایش داده می‌شود -->
+                </div>
+                <div class="support-contact">
+                    <p>راه‌های ارتباطی دیگر:</p>
+                    <div class="contact-methods">
+                        <div><i class="fas fa-phone"></i> ۰۲۱-۱۲۳۴۵۶۷۸</div>
+                        <div><i class="fas fa-envelope"></i> support@example.com</div>
+                        <div><i class="fab fa-whatsapp"></i> ۰۹۱۲۱۲۳۴۵۶۷</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- overlay برای مودال‌ها -->
+        <div class="overlay" id="overlay"></div>
+    </main>
+    
+    <!-- فوتر سایت -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>درباره فروشگاه</h4>
+                    <p>فروشگاه آنلاین با ارائه بهترین محصولات و قیمت‌ها در خدمت شماست. خرید آسان و مطمئن با گارانتی بازگشت کالا.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>دسترسی سریع</h4>
+                    <ul>
+                        <li><a href="#">صفحه اصلی</a></li>
+                        <li><a href="#">دسته‌بندی محصولات</a></li>
+                        <li><a href="#">تخفیف‌های ویژه</a></li>
+                        <li><a href="#">پیگیری سفارش</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>ارتباط با ما</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> تهران، خیابان نمونه</p>
+                        <p><i class="fas fa-phone"></i> ۰۲۱-۱۲۳۴۵۶۷۸</p>
+                        <p><i class="fas fa-envelope"></i> info@example.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© ۱۴۰۳ کلیه حقوق برای فروشگاه آنلاین محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+  </html>
